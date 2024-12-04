@@ -1,0 +1,33 @@
+---
+name: Build OpenSIPS SoftSwitch IMS Image
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .debian.packages
+
+jobs:
+
+  publish:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Get the required packages
+      id: fetch_packages
+      run: echo "MODULES=$(cat .debian.packages | tr '\n' ' ')" > $GITHUB_OUTPUT
+
+    - name: Publish OpenSIPS SoftSwitch IMS Docker image
+      uses: OpenSIPS/docker-opensips/.github/actions/docker-opensips-publish@main
+      with:
+        version: 3.6
+        tag: ims-ce
+        cli: false
+        build: nightly
+        modules: ${{ steps.fetch_packages.outputs.MODULES }}
+        docker-username: ${{ secrets.DOCKER_USERNAME }}
+        docker-token: ${{ secrets.DOCKER_TOKEN }}
+
