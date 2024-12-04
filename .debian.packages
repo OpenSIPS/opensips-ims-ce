@@ -1,7 +1,7 @@
 m4
 gettext-base
-opensips-auth-module
 opensips-json-module
+opensips-auth-modules
 opensips-http-modules
 opensips-ipsec-module
 opensips-mysql-module
