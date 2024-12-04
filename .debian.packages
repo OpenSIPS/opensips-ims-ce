@@ -1,8 +1,9 @@
 m4
 gettext-base
-opensips-mysql-module
+opensips-auth-module
 opensips-json-module
 opensips-http-modules
 opensips-ipsec-module
+opensips-mysql-module
 opensips-diameter-module
 
