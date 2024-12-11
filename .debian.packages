@@ -5,5 +5,6 @@ opensips-auth-modules
 opensips-http-modules
 opensips-ipsec-module
 opensips-mysql-module
+opensips-mysql-dbschema
 opensips-diameter-module
 
