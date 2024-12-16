@@ -7,8 +7,9 @@ variables. These variables are utilized by the OpenSIPS pre-processing script
 environment where each component is running.
 
 _Note_: Docker Open5GS already includes all these variables in the
-[`.env`]() file, so you don't necessarily need to explicitely tune them unless
-really needed.
+[`.env`](https://github.com/herlesupreeth/docker_open5gs/blob/master/.env)
+file, so you don't necessarily need to explicitely tune them unless really
+needed.
 
 ## Environment Variables
 
@@ -36,6 +37,7 @@ The following environemnt variables are being used:
 <sub>
 <sup>*</sup> The components field contains one of the initials of the CSCF sub-component.
 </sub>
+
 
 <sub>
 <sup>**</sup> The default variables are mainly provided by the Docker Open5GS project - 
