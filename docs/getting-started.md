@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition - Getting Started
+# OpenSIPS IMS - Community Edition - Getting Started
 
 This page provides a guide on setting up the OpenSIPS IMS Community Edition
 within the [Docker Open5GS](https://github.com/herlesupreeth/docker_open5gs)

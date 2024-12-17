@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition - S-CSCF
+# OpenSIPS IMS - Community Edition - S-CSCF
 
 The Serving Call Session Control Function (S-CSCF) handles the UE registrations,
 manages users authentication, SIP sessions routing and external service integration.

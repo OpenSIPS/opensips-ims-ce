@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition - Configuration
+# OpenSIPS IMS - Community Edition - Configuration
 
 
 The OpenSIPS IMS Community Edition scripts can be configured using environment

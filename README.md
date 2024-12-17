@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition
+# OpenSIPS IMS - Community Edition
 
 This project provides a fully working IMS (IP Multimedia Subsystem) CSCF (Call
 Session Control Function) component compliant with the 3GPP specifications for
@@ -18,6 +18,11 @@ Currently, the project includes the following essential IMS CSCF sub-components:
 Each sub-component adheres to the IMS standards outlined in TS 124 228,
 ensuring compatibility and enabling seamless integration as a replacement in an
 existing (non OpenSIPS-based) IMS setup.
+
+The project is designed to seamlessly integrate and provide the IMS
+functionality within the Dockerized Open5GS 4G core network, incorporating all
+the essential CSCF (Call Session Control Function) Docker components for a
+fully integrated solution.
 
 ## Getting Started
 

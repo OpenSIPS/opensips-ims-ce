@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition - I-CSCF
+# OpenSIPS IMS - Community Edition - I-CSCF
 
 The Interrogating - Call Session Control Function (I-CSCF) handles SIP
 signaling for session control and facilitates secure interactions between the

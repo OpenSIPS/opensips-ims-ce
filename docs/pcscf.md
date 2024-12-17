@@ -1,4 +1,4 @@
-# OpenSIPS IMS CSCF - Community Edition - P-CSCF
+# OpenSIPS IMS - Community Edition - P-CSCF
 
 The Proxy - Call Session Control Function (P-CSCF) serves as the initial point
 of contact for user equipment in a mobile network. All SIP traffic to and from
