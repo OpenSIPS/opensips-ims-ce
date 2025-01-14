@@ -9,3 +9,4 @@ opensips-mysql-module
 opensips-mysql-dbschema
 opensips-diameter-module
 opensips-dialplan-module
+opensips-presence-modules
