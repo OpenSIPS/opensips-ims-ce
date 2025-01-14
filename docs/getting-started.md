@@ -63,19 +63,19 @@ steps to do that.
 [these](https://github.com/herlesupreeth/docker_open5gs?tab=readme-ov-file#provisioning-of-sim-information-in-pyhss-is-as-follows)
 steps for that.
 
-## Configure Dialplan
+## Configure Dialplan (optional)
 
-To ensure that the S-CSCF correctly recognizes the dialed numbers, it is
-necessary to configure the dial plan appropriately. This involves provisioning
-the `dialplan` table in MySQL by following these steps:
+The S-CSCF considers every dialled number as being a user and handles it
+accordingly. However, you can also add custom rules for handling different
+other services or applications. For example, to add a dialplan rule that sends
+all the calls dialling `*99` to the voicemail box, you can follow these steps:
 ```
 # login in mysql scscf database
 docker exec -it mysql mysql scscf
-# insert the dialplan rule - make sure you adapt the rule according to the
-# MSISDN values configured in previous step
-insert into dialplan (dpid, match_op, match_exp, repl_exp) values (1, 1, "^407[0-9]{8}$", "USER");
+# insert the dialplan rule, with the associated type
+insert into dialplan (dpid, match_op, match_exp, repl_exp) values (1, 1, "^\*99$", "SERVICE");
 ```
-<sub><sup>*</sup> the previous rule adds a generic dialplan for a Romanian dialplan</sub>.
+<sub><sup>*</sup> voicemail handling is currently not handled</sub>.
 
 Of course, you can set multiple rules, according to your dialplan. Once
 everything is set up, we need to reload OpenSIPS's dialplan cache.

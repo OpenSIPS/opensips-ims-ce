@@ -23,9 +23,10 @@ for a particular user.
 The S-CSCF can be configured through the environment variables defined
 [here](config.md#environment-variables).
 
-Additionally, the S-CSCF must have a dial plan provisioned in the MySQL `scscf`
-database `dialplan` table to handle call routing effectively. The required
-fields in the database are:
+By default, the S-CSCF considers each number dialled as being a USER, and
+handles it accordingly. Optionally, you can provision custom dialplan rules
+that the S-CSCF can handle differently. These rules must have be provisioned in
+the MySQL `scscf` database `dialplan`. The required fields in the database are:
 
  * `dpid` - dialplan ID, needs to be set to `1`
  * `match_op` - matching operator - `0` if a string match is used, `1` if regex
