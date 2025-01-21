@@ -2,6 +2,7 @@ m4
 iproute2
 gettext-base
 default-mysql-client
+opensips-xml-module
 opensips-json-module
 opensips-auth-modules
 opensips-http-modules
