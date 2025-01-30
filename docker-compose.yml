@@ -302,8 +302,8 @@ services:
     container_name: icscf
     dns: ${DNS_IP}
     volumes:
-      - ./ims_opensips/icscf:/etc/opensips
-      - ./ims_opensips/substenv.sh:/etc/opensips/substenv.sh
+      - ./opensips-ims-ce/icscf:/etc/opensips
+      - ./opensips-ims-ce/substenv.sh:/etc/opensips/substenv.sh
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     command:
@@ -329,8 +329,8 @@ services:
     container_name: scscf
     dns: ${DNS_IP}
     volumes:
-      - ./ims_opensips/scscf:/etc/opensips
-      - ./ims_opensips/substenv.sh:/etc/opensips/substenv.sh
+      - ./opensips-ims-ce/scscf:/etc/opensips
+      - ./opensips-ims-ce/substenv.sh:/etc/opensips/substenv.sh
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     entrypoint: /etc/opensips/entrypoint.sh
@@ -360,8 +360,8 @@ services:
     cap_add:
       - NET_ADMIN
     volumes:
-      - ./ims_opensips/pcscf:/etc/opensips
-      - ./ims_opensips/substenv.sh:/etc/opensips/substenv.sh
+      - ./opensips-ims-ce/pcscf:/etc/opensips
+      - ./opensips-ims-ce/substenv.sh:/etc/opensips/substenv.sh
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     entrypoint: /etc/opensips/entrypoint.sh
